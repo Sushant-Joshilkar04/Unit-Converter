@@ -2,13 +2,13 @@
 #include<conio.h>
 #include <math.h>
 
-int length();      
-int area();
-int speed();
-int weight();
-int temperature();
-int power();
-int pressure();
+int length();            // Declaration of function 
+int area();              // Declaration of function 
+int speed();             // Declaration of function 
+int weight();            // Declaration of function 
+int temperature();       // Declaration of function 
+int power();             // Declaration of function 
+int pressure();          // Declaration of function 
 
 
 int main(){
@@ -19,26 +19,25 @@ int main(){
 	scanf("%d",&n);
 	switch (n){
 		
-		case 1:  length();
+		case 1:  length();                // Calling length function
 			break;
-		case 2:	 area();
+		case 2:	 area();                 // Calling area function
 		    break;
-	    case 3:  speed();
+	    case 3:  speed();                // Calling  speed function
 			break;
-	    case 4:  weight();
+	    case 4:  weight();               // Calling weight function
 			break;
-		case 5:  temperature();
+		case 5:  temperature();         // Calling temperature function
 			break;
-		case 6:  power();
+		case 6:  power();               // Calling power function
 			break;
-		case 7:  pressure();
+		case 7:  pressure();            // Calling pressure function
 			break;
 		default: printf("Invalid Choice"); 
 		    
 	}
     printf("\nDo you want to continue ( Yes=1 & No=Any other Number) ");
     scanf("%d",&ans);
-    printf("\n\n");
     }while (ans==1);
     if (ans!=1)
     {
@@ -49,7 +48,7 @@ int main(){
 	return 0;
 }
 
-
+  // definition of length function
 int length(){
 	int num;
 	printf("Choose any conversion from the following:\n1.Meter to Kilometer\n2.Kilometer to Meter\n3.Meter to Centimeter\n4.Centimeter to meter\n5.Centimeter to Milimeter\n6.Milimeter to Centimeter\n7.Meter to Foot \n8.Foot to Meter\n9.Centimeter to inch\n10.Inch to centimeter\n\n");
@@ -133,8 +132,9 @@ int length(){
 		    
 	}
 	return 0;
-}
+}                                   
 
+// definition of area function
 int area(){
 		int n;
 	printf("Choose any conversion from the following:\n1.Square Meter to Square Centimeter \n2.Square Centimeter to Square Meter\n3.Square Meter to Square Kilometer\n4.Square Kilometer to Square Meter\n5.Square Meter to Square Foot\n6.Square Foot to Square Meter\n7.Square Centimeter to Square Inch \n8.Square Inch to Square Meter\n9.Square Kilometer to Acre\n10.Acre to Kilometer\n\n");
@@ -217,7 +217,9 @@ int area(){
 		    
 	}
 	return 0;
-}
+}        
+
+// definition of speed function
 int speed(){
 		int n;
 	printf("Choose any conversion from the following:\n1.Meter/Second to Kilometer/Hour\n2.Kilometer/Hour to Meter/Second\n3.Meter/Second to Inch/Second\n4.Inch/Second to Meter/Second\n5.Meter/Second to Mile/Hour\n6.Mile/Hour to Meter/Second\n\n");
@@ -272,7 +274,9 @@ int speed(){
 		    
 	}
 	return 0;
-}
+}    
+
+// definition of weight function
 int weight(){
 		int n;
 	printf("Choose any conversion from the following:\n1.Gram to Kilogram\n2.Kilogram to Gram\n3.Quintal to Kilogram\n4.Kilogram to Quintal\n5.Gram to Carat\n6.Carat to Gram\n7.Kilogram To Ton\n8.Ton to Kilogram\n9.Gram to Miligram\n10.Miligram to Gram\n\n");
@@ -354,8 +358,9 @@ int weight(){
 		    
 	}
 	return 0;
-}
+}                               
 
+// definition of temperature function
 int temperature(){
 		int n;
 	printf("Choose any conversion from the following:\n1.Degree Celsius to Fahrenheit\n2.Fahrenheit to Degree Celsius\n3.Degree Celsius to Kelvin\n4.Kelvin to Degree Celsius\n5.Kelvin to Fahrenheit\n6.Fahrenheit to Kelvin\n\n");
@@ -411,7 +416,9 @@ int temperature(){
 		    
 	}
 	return 0;
-}
+}  
+
+// definition of power function
 int power(){
 		int n;
 	printf("Choose any conversion from the following:\n1.Watt to Kilowatt\n2.Kilowatt to Watt\n3.KiloCalorie/Second to Kilowatt \n4.Kilowatt to Kilocalorie\n\n");
@@ -451,7 +458,9 @@ int power(){
 		    
 	}
 	return 0;
-}
+}   
+
+// definition of pressure function
 int pressure(){
 	int n;
 	printf("Choose any conversion from the following:\n1.Bar To Standard Atmosphere\n2.Standard Atmosphere to Bar\n3.Bar to Milimeter of Mercury\n4.Milimeter of Mercury to Bar\n5.Bar to Kilopascal\n6.Kilopascal to Bar\n7.Bar to PSI\n8.PSI to Bar\n\n");
@@ -518,4 +527,5 @@ int pressure(){
 		    
 	}
 	return 0;
-}
+
+}                                
